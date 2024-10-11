@@ -52,7 +52,7 @@ h1{
 }
 .bod {
   width: 100%;
-  background-color:black;
+  background-color:#30313d;
 }
 
 .container {
@@ -62,6 +62,7 @@ h1{
 
 .field {
   display: flex;
+  background-color: white;
 }
 
 .inputtext {
@@ -77,11 +78,9 @@ h1{
 }
 
 .button {
-  color: rgba(43, 32, 32, 0.76);
   font-size: 18px;
   cursor: pointer;
   padding: 5px 25px;
-  background-color: white;
   border: 1px solid #D7DBDD;
   border-radius: 0;
   outline: 0;
@@ -89,14 +88,19 @@ h1{
 
 .resetbtn {
   margin: 20px 0 0 65px;
+  background-color: #30313d;
+  border: 1px solid white;
+  border-radius: 2px;
+  color: #ff5722;
 }
 
 .Shiny_Probability {
   padding: 10px;
-  margin: -100px auto;
+  margin: -150px auto;
   width: 250px;
   border: 1px solid #858585;
-  border-radius: 10px;
+  border-radius: 5px;
+  background-color: white;
 }
 
 #prob-list {
