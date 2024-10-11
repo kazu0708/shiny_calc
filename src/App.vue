@@ -88,8 +88,8 @@ h1{
 
 .resetbtn {
   margin: 20px 0 0 65px;
-  background-color: #30313d;
-  border: 1px solid white;
+  background-color: #515266;
+  border: 1px solid #ff5722;
   border-radius: 2px;
   color: #ff5722;
 }
