@@ -47,8 +47,30 @@ const reset = () => count.value = 0;
 </template>
 
 <style scoped>
-h1{
+h1 {
   color:white;
+  position: relative;
+  padding-left: 25px;
+}
+
+h1:before {
+  position: absolute;
+  content: '';
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: none;
+  border-left: solid 15px transparent;
+  border-bottom: solid 15px rgb(119, 195, 223);
+}
+h1:after {
+  position: absolute;
+  content: '';
+  bottom: -3px;
+  left: 10px;
+  width: 100%;
+  border-bottom: solid 3px rgb(119, 195, 223);
 }
 .bod {
   width: 100%;
