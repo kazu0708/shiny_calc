@@ -13,9 +13,7 @@ const probability = computed(() => {
 
 // カウントを増減する関数
 const increment = () => count.value++;
-const decrement = () => {
-  if (count.value > 0) count.value--;
-};
+const decrement = () => count.value > 0 && count.value--;
 const reset = () => count.value = 0;
 </script>
 
