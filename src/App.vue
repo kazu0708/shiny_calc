@@ -6,10 +6,9 @@ const count = ref(0);
 const selectedProbability = ref(512);
 
 // 確率の計算をリアクティブに実行
-const probability = computed(() => {
-  const prob = 1 - (((selectedProbability.value - 1) / selectedProbability.value) ** count.value);
-  return (prob * 100).toFixed(5);
-});
+const probability = computed(() => 
+  ((1 - Math.pow((selectedProbability.value - 1) / selectedProbability.value, count.value)) * 100).toFixed(5)
+);
 
 // カウントを増減する関数
 const increment = () => count.value++;
