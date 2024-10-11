@@ -18,6 +18,8 @@ const reset = () => count.value = 0;
 </script>
 
 <template>
+<div class="bod">
+<h1>色違いトリガー</h1>
   <div class="container">
     <div class="field">
       <button class="button" @click="decrement">－</button>
@@ -42,11 +44,16 @@ const reset = () => count.value = 0;
       <p>{{ probability }}%</p>
     </div>
   </div>
+  </div>
 </template>
 
 <style scoped>
-body {
+h1{
+  color:white;
+}
+.bod {
   width: 100%;
+  background-color:black;
 }
 
 .container {
